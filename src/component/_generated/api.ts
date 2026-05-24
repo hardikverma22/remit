@@ -8,8 +8,11 @@
  * @module
  */
 
+import type * as capabilities from "../capabilities.js";
 import type * as http from "../http.js";
-import type * as lib from "../lib.js";
+import type * as identity from "../identity.js";
+import type * as lineage from "../lineage.js";
+import type * as policy from "../policy.js";
 
 import type {
   ApiFromModules,
@@ -19,8 +22,11 @@ import type {
 import { anyApi, componentsGeneric } from "convex/server";
 
 const fullApi: ApiFromModules<{
+  capabilities: typeof capabilities;
   http: typeof http;
-  lib: typeof lib;
+  identity: typeof identity;
+  lineage: typeof lineage;
+  policy: typeof policy;
 }> = anyApi as any;
 
 /**
