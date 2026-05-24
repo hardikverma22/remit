@@ -63,8 +63,10 @@
     }
   },
   "peerDependencies": {
+    "@convex-dev/agent": "^0.6.1",
     "convex": "^1.36.1",
-    "react": "^18.3.1 || ^19.0.0"
+    "react": "^18.3.1 || ^19.0.0",
+    "zod": "^3.22.0"
   },
   "devDependencies": {
     "@convex-dev/agent": "^0.6.1",
